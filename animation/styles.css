@@ -1,0 +1,64 @@
+.parent{
+    background-color: hsla(200, 100%, 20%);
+    height: 400px;
+    width: 400px;
+}
+
+.child{
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    /*transition:transform 2s linear 1s;*/
+    animation: left-to-right 2s linear infinite alternate;
+}
+
+.parent:hover .child{
+    
+    animation-play-state: paused;
+}
+
+
+@keyframes left-to-right{
+    0%{
+        transform: translateX(0%);
+    }
+    
+    33%{
+        background: aliceblue;
+        transform: translateY(100%);
+    }
+    
+    66%{
+        background: aliceblue;
+        transform: translateX(100%) translateY(100%);
+    }
+    
+    100%{
+        background: aliceblue;
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
